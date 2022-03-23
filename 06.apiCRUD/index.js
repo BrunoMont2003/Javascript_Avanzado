@@ -1,24 +1,19 @@
 //NUESTRO INDEX PRINCIPAL
-const goodReadsCrud = require ('./crudAuthors.js')
+const goodReadsCrud = require("./crudAuthors.js");
 
-//Listo mis autores 
+//Listo mis autores
 // goodReadsCrud.listAuthors()
 
 //Ver un Author
-// goodReadsCrud.getAuthor(14712) //14567 , //17060
+goodReadsCrud.getAuthor(14567);
 
-// CREAR UN AUTOR 
-// const jsonSend = {
-//     name: "Juan",
-// 	last_name: "Ramirez",
-// 	nacionalidad: "MX",
-// 	biography: "Escritor",
-// 	gender: "M",
-// 	age: 30,
-// 	is_alive: true
-// }
-
-// goodReadsCrud.createAuthor(jsonSend)
-
-//ELIMINAR MI AUTOR
-goodReadsCrud.deleteAuthor(14716)
+const jsonSend = {
+  name: "Eduardo",
+  last_name: "Camavinga",
+  nacionalidad: "MX",
+  biography: "Soccer Player",
+  gender: "M",
+  age: 19,
+  is_alive: true,
+};
+goodReadsCrud.createAuthor(jsonSend);
